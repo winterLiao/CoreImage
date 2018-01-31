@@ -15,6 +15,8 @@
 		3E77DB112019AE200034CA43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77DB102019AE200034CA43 /* main.m */; };
 		3E77DB1B2019AE200034CA43 /* CoreImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77DB1A2019AE200034CA43 /* CoreImageTests.m */; };
 		3E77DB262019AE200034CA43 /* CoreImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77DB252019AE200034CA43 /* CoreImageUITests.m */; };
+		3E77DB342019BB640034CA43 /* zly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E77DB332019BB630034CA43 /* zly.jpg */; };
+		3E77DB362019BCAA0034CA43 /* wife.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3E77DB352019BCAA0034CA43 /* wife.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3E77DB212019AE200034CA43 /* CoreImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E77DB252019AE200034CA43 /* CoreImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreImageUITests.m; sourceTree = "<group>"; };
 		3E77DB272019AE200034CA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E77DB332019BB630034CA43 /* zly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zly.jpg; sourceTree = "<group>"; };
+		3E77DB352019BCAA0034CA43 /* wife.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wife.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				3E77DB0C2019AE200034CA43 /* LaunchScreen.storyboard */,
 				3E77DB0F2019AE200034CA43 /* Info.plist */,
 				3E77DB102019AE200034CA43 /* main.m */,
+				3E77DB332019BB630034CA43 /* zly.jpg */,
+				3E77DB352019BCAA0034CA43 /* wife.JPG */,
 			);
 			path = CoreImage;
 			sourceTree = "<group>";
@@ -240,6 +246,8 @@
 			files = (
 				3E77DB0E2019AE200034CA43 /* LaunchScreen.storyboard in Resources */,
 				3E77DB0B2019AE200034CA43 /* Assets.xcassets in Resources */,
+				3E77DB362019BCAA0034CA43 /* wife.JPG in Resources */,
+				3E77DB342019BB640034CA43 /* zly.jpg in Resources */,
 				3E77DB092019AE200034CA43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ99SSF866;
 				INFOPLIST_FILE = CoreImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-4.CoreImage";
@@ -444,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ99SSF866;
 				INFOPLIST_FILE = CoreImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-4.CoreImage";
