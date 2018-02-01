@@ -235,25 +235,31 @@ typedef NS_ENUM(int,Stype) {
 
 - (void)filter
 {
-    //获取图片
-    CIImage *image = [CIImage imageWithCGImage:[_image CGImage]];
-    //创建CIFilter
-    CIFilter *filter = [CIFilter filterWithName:self.filterName];
-    //设置滤镜输入参数
-    [filter setValue:image forKey:kCIInputImageKey];
-    //进行默认设置
-    [filter setDefaults];
-    //创建CIContext对象
-    CIContext *context = [CIContext contextWithOptions:nil];
-    //创建处理后的图片
-    CIImage *resultImage = filter.outputImage;
-    CGImageRef imageRef = [context createCGImage:resultImage fromRect:CGRectMake(0,0,self.image.size.width,self.image.size.height)];
-    UIImage *resultImg = [UIImage imageWithCGImage:imageRef];
-    [_imageView setImage:resultImg];
-    CFRelease(imageRef);
+    //防止线程阻塞，用GCD异步执行滤镜与渲染操作，在获取渲染后的照片以后，返回主线程进行界面的更新。
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        //获取图片
+        CIImage *image = [CIImage imageWithCGImage:[_image CGImage]];
+        //创建CIFilter
+        CIFilter *filter = [CIFilter filterWithName:self.filterName];
+        //设置滤镜输入参数
+        [filter setValue:image forKey:kCIInputImageKey];
+        //进行默认设置
+        [filter setDefaults];
+        //创建CIContext对象
+        CIContext *context = [CIContext contextWithOptions:nil];
+        //创建处理后的图片
+        CIImage *resultImage = filter.outputImage;
+        CGImageRef imageRef = [context createCGImage:resultImage fromRect:CGRectMake(0,0,self.image.size.width,self.image.size.height)];
+        UIImage *resultImg = [UIImage imageWithCGImage:imageRef];
+        
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            [_imageView setImage:resultImg];
+            CFRelease(imageRef);
+        });
+    });
 }
 
-//再次添加滤镜  形成滤镜链
+//再次添加滤镜  形成滤镜链 不能再CIImage中重复添加
 - (void)addFilter{
     CIImage *image = [CIImage imageWithCGImage:[_imageView.image CGImage]];
     CIFilter *filter = [CIFilter filterWithName:self.filterName];

@@ -17,6 +17,7 @@
 		3E77DB262019AE200034CA43 /* CoreImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77DB252019AE200034CA43 /* CoreImageUITests.m */; };
 		3E77DB342019BB640034CA43 /* zly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E77DB332019BB630034CA43 /* zly.jpg */; };
 		3E77DB362019BCAA0034CA43 /* wife.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3E77DB352019BCAA0034CA43 /* wife.JPG */; };
+		C8694F7C2021CCC300AEB272 /* DetectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8694F7B2021CCC300AEB272 /* DetectorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		3E77DB272019AE200034CA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E77DB332019BB630034CA43 /* zly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zly.jpg; sourceTree = "<group>"; };
 		3E77DB352019BCAA0034CA43 /* wife.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wife.JPG; sourceTree = "<group>"; };
+		C8694F7A2021CCC300AEB272 /* DetectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetectorViewController.h; sourceTree = "<group>"; };
+		C8694F7B2021CCC300AEB272 /* DetectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				3E77DB022019AE1F0034CA43 /* AppDelegate.m */,
 				3E77DB042019AE1F0034CA43 /* ViewController.h */,
 				3E77DB052019AE200034CA43 /* ViewController.m */,
+				C8694F7A2021CCC300AEB272 /* DetectorViewController.h */,
+				C8694F7B2021CCC300AEB272 /* DetectorViewController.m */,
 				3E77DB072019AE200034CA43 /* Main.storyboard */,
 				3E77DB0A2019AE200034CA43 /* Assets.xcassets */,
 				3E77DB0C2019AE200034CA43 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8694F7C2021CCC300AEB272 /* DetectorViewController.m in Sources */,
 				3E77DB062019AE200034CA43 /* ViewController.m in Sources */,
 				3E77DB112019AE200034CA43 /* main.m in Sources */,
 				3E77DB032019AE1F0034CA43 /* AppDelegate.m in Sources */,
