@@ -121,6 +121,9 @@
     [resultView setTransform:CGAffineTransformMakeScale(1, -1)];
 }
 
+/**
+ 二维码扫描
+ */
 - (void)detectorWithQRCodeFeature
 {
     CIDetector *qrCodeDetector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{CIDetectorAccuracy:CIDetectorAccuracyHigh}];

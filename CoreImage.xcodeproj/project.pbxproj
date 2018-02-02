@@ -23,6 +23,7 @@
 		C8694F872023125600AEB272 /* smile.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8694F852023125500AEB272 /* smile.jpeg */; };
 		C8694F882023125600AEB272 /* close.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8694F862023125500AEB272 /* close.jpg */; };
 		C8694F8D202439B000AEB272 /* QRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = C8694F8C202439AF00AEB272 /* QRCode.png */; };
+		C8694F902024508F00AEB272 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8694F8F2024508F00AEB272 /* FilterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		C8694F852023125500AEB272 /* smile.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smile.jpeg; sourceTree = "<group>"; };
 		C8694F862023125500AEB272 /* close.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close.jpg; sourceTree = "<group>"; };
 		C8694F8C202439AF00AEB272 /* QRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode.png; sourceTree = "<group>"; };
+		C8694F8E2024508F00AEB272 /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		C8694F8F2024508F00AEB272 /* FilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				3E77DB022019AE1F0034CA43 /* AppDelegate.m */,
 				3E77DB042019AE1F0034CA43 /* ViewController.h */,
 				3E77DB052019AE200034CA43 /* ViewController.m */,
+				C8694F8E2024508F00AEB272 /* FilterViewController.h */,
+				C8694F8F2024508F00AEB272 /* FilterViewController.m */,
 				C8694F7A2021CCC300AEB272 /* DetectorViewController.h */,
 				C8694F7B2021CCC300AEB272 /* DetectorViewController.m */,
 				3E77DB072019AE200034CA43 /* Main.storyboard */,
@@ -308,6 +313,7 @@
 			files = (
 				C8694F7C2021CCC300AEB272 /* DetectorViewController.m in Sources */,
 				3E77DB062019AE200034CA43 /* ViewController.m in Sources */,
+				C8694F902024508F00AEB272 /* FilterViewController.m in Sources */,
 				3E77DB112019AE200034CA43 /* main.m in Sources */,
 				3E77DB032019AE1F0034CA43 /* AppDelegate.m in Sources */,
 			);
