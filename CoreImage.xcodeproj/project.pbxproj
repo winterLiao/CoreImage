@@ -15,9 +15,14 @@
 		3E77DB112019AE200034CA43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77DB102019AE200034CA43 /* main.m */; };
 		3E77DB1B2019AE200034CA43 /* CoreImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77DB1A2019AE200034CA43 /* CoreImageTests.m */; };
 		3E77DB262019AE200034CA43 /* CoreImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E77DB252019AE200034CA43 /* CoreImageUITests.m */; };
-		3E77DB342019BB640034CA43 /* zly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E77DB332019BB630034CA43 /* zly.jpg */; };
 		3E77DB362019BCAA0034CA43 /* wife.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3E77DB352019BCAA0034CA43 /* wife.JPG */; };
 		C8694F7C2021CCC300AEB272 /* DetectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8694F7B2021CCC300AEB272 /* DetectorViewController.m */; };
+		C8694F812022FC4700AEB272 /* daughter.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8694F7F2022FC4600AEB272 /* daughter.jpeg */; };
+		C8694F822022FC4700AEB272 /* brother.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8694F802022FC4700AEB272 /* brother.jpg */; };
+		C8694F8420230B7700AEB272 /* ym.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8694F8320230B7700AEB272 /* ym.jpg */; };
+		C8694F872023125600AEB272 /* smile.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8694F852023125500AEB272 /* smile.jpeg */; };
+		C8694F882023125600AEB272 /* close.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8694F862023125500AEB272 /* close.jpg */; };
+		C8694F8D202439B000AEB272 /* QRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = C8694F8C202439AF00AEB272 /* QRCode.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +59,15 @@
 		3E77DB212019AE200034CA43 /* CoreImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E77DB252019AE200034CA43 /* CoreImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreImageUITests.m; sourceTree = "<group>"; };
 		3E77DB272019AE200034CA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E77DB332019BB630034CA43 /* zly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zly.jpg; sourceTree = "<group>"; };
 		3E77DB352019BCAA0034CA43 /* wife.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wife.JPG; sourceTree = "<group>"; };
 		C8694F7A2021CCC300AEB272 /* DetectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetectorViewController.h; sourceTree = "<group>"; };
 		C8694F7B2021CCC300AEB272 /* DetectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectorViewController.m; sourceTree = "<group>"; };
+		C8694F7F2022FC4600AEB272 /* daughter.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daughter.jpeg; sourceTree = "<group>"; };
+		C8694F802022FC4700AEB272 /* brother.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brother.jpg; sourceTree = "<group>"; };
+		C8694F8320230B7700AEB272 /* ym.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ym.jpg; sourceTree = "<group>"; };
+		C8694F852023125500AEB272 /* smile.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smile.jpeg; sourceTree = "<group>"; };
+		C8694F862023125500AEB272 /* close.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close.jpg; sourceTree = "<group>"; };
+		C8694F8C202439AF00AEB272 /* QRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,7 @@
 		3E77DB002019AE1F0034CA43 /* CoreImage */ = {
 			isa = PBXGroup;
 			children = (
+				C8694F8B202417AB00AEB272 /* image */,
 				3E77DB012019AE1F0034CA43 /* AppDelegate.h */,
 				3E77DB022019AE1F0034CA43 /* AppDelegate.m */,
 				3E77DB042019AE1F0034CA43 /* ViewController.h */,
@@ -119,8 +130,6 @@
 				3E77DB0C2019AE200034CA43 /* LaunchScreen.storyboard */,
 				3E77DB0F2019AE200034CA43 /* Info.plist */,
 				3E77DB102019AE200034CA43 /* main.m */,
-				3E77DB332019BB630034CA43 /* zly.jpg */,
-				3E77DB352019BCAA0034CA43 /* wife.JPG */,
 			);
 			path = CoreImage;
 			sourceTree = "<group>";
@@ -141,6 +150,20 @@
 				3E77DB272019AE200034CA43 /* Info.plist */,
 			);
 			path = CoreImageUITests;
+			sourceTree = "<group>";
+		};
+		C8694F8B202417AB00AEB272 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				C8694F7F2022FC4600AEB272 /* daughter.jpeg */,
+				C8694F802022FC4700AEB272 /* brother.jpg */,
+				3E77DB352019BCAA0034CA43 /* wife.JPG */,
+				C8694F8320230B7700AEB272 /* ym.jpg */,
+				C8694F862023125500AEB272 /* close.jpg */,
+				C8694F852023125500AEB272 /* smile.jpeg */,
+				C8694F8C202439AF00AEB272 /* QRCode.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E77DB0E2019AE200034CA43 /* LaunchScreen.storyboard in Resources */,
+				C8694F812022FC4700AEB272 /* daughter.jpeg in Resources */,
+				C8694F822022FC4700AEB272 /* brother.jpg in Resources */,
 				3E77DB0B2019AE200034CA43 /* Assets.xcassets in Resources */,
+				C8694F872023125600AEB272 /* smile.jpeg in Resources */,
 				3E77DB362019BCAA0034CA43 /* wife.JPG in Resources */,
-				3E77DB342019BB640034CA43 /* zly.jpg in Resources */,
+				C8694F8420230B7700AEB272 /* ym.jpg in Resources */,
+				C8694F882023125600AEB272 /* close.jpg in Resources */,
+				C8694F8D202439B000AEB272 /* QRCode.png in Resources */,
 				3E77DB092019AE200034CA43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

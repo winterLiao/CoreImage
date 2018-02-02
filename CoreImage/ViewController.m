@@ -89,15 +89,15 @@ typedef NS_ENUM(int,Stype) {
     [self.view addSubview:saveButton];
 
     //获取滤镜名字
-    NSArray* filters =  [CIFilter filterNamesInCategory:kCICategoryBlur];
-    for (NSString* filterName in filters) {
-        NSLog(@"filter name:%@",filterName);
-        // 我们可以通过filterName创建对应的滤镜对象
-        CIFilter* filter = [CIFilter filterWithName:filterName];
-        NSDictionary* attributes = [filter attributes];
-        // 获取属性键/值对（在这个字典中我们可以看到滤镜的属性以及对应的key）
-        NSLog(@"filter attributes:%@",attributes);
-    }
+//    NSArray* filters =  [CIFilter filterNamesInCategory:kCICategoryBlur];
+//    for (NSString* filterName in filters) {
+//        NSLog(@"filter name:%@",filterName);
+//        // 我们可以通过filterName创建对应的滤镜对象
+//        CIFilter* filter = [CIFilter filterWithName:filterName];
+//        NSDictionary* attributes = [filter attributes];
+//        // 获取属性键/值对（在这个字典中我们可以看到滤镜的属性以及对应的key）
+//        NSLog(@"filter attributes:%@",attributes);
+//    }
 }
 
 
